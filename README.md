@@ -5,18 +5,17 @@ Junior .NET Developer tests
 
 1.	What are your career goals (а) 3 years from now; (b) 10 years from now?
 2.	What is SCRUM?
-```
-	https://www.visualstudio.com/learn/what-is-scrum/
+
+*	https://www.visualstudio.com/learn/what-is-scrum/
 	Scrum is a framework used by teams to manage their work. Scrum implements the principles of Agile as a concrete set of practices and roles.
- ```
+
 
 3.	During development of a new functionality you have found a bug in existing code. What action do you take?
 4.	How do you maintain your code to prove that it is a good quality code?
 5.	Who/what is QA? Do we need them in the development process?
 6.	What version control systems are need for? What version control systems have you worked with?
-```		
-	Version control is a system that records changes to a file or set of files over time so that you can recall specific 				versions later.
-```
+
+	Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
 7.	What is UAC?
 8.	A custumer reports slow perormance of your application that was not reproduced in development environment. What would you suggest to do to find and localize the reason?
@@ -83,9 +82,9 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 	Связь работает путем сопоставления данных в ключевых столбцах; обычно это столбцы с одним и тем же именем в обеих таблицах. В большинстве случаев связь сопоставляет первичный ключ одной таблицы, являющийся уникальным идентификатором каждой строки этой таблицы, с записями внешнего ключа другой таблицы. Например продажи книг можно связать с названиями проданных книг и создать связь между столбцом title_id таблицы titles (первичный ключ) и столбцом title_id таблицы sales (внешний ключ).
 	Существует три типа связей между таблицами. Тип создаваемой связи зависит от того, как определены связанные столбцы. 
 	Связи «один ко многим» --- Связи «многие ко многим» --- Связи «один к одному»
-```
-	https://habrahabr.ru/post/193380/
-```
+
+*[Habrahabr] https://habrahabr.ru/post/193380/
+
 12.	Что такое транзакция?
 13.	Что такое Триггер?
 14.	Что такое Функция и Хранимая процедура? Отличия
