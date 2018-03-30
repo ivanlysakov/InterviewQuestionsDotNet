@@ -1,7 +1,7 @@
 # InterviewQuestionsDotNet
 Junior .NET Developer tests
 
-##General
+## General
 
 1.	What are your career goals (а) 3 years from now; (b) 10 years from now?
 2.	What is SCRUM?
@@ -21,7 +21,7 @@ Junior .NET Developer tests
 7.	What is UAC?
 8.	A custumer reports slow perormance of your application that was not reproduced in development environment. What would you suggest to do to find and localize the reason?
 
-##DB/SQL
+## DB/SQL
 
 1.	Write a query that shows all clients (FIRST NAME, LAST NAME) that occur more than once in the following client table. The query should also show how often the client occurs in the table.
 Table ClientRequests
@@ -88,7 +88,7 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 13.	Что такое Триггер?
 14.	Что такое Функция и Хранимая процедура? Отличия
 
-##OOP
+## OOP
 
 1.	What benefits of Classes?
 2.	What Incapsulation is? What benefits does it give?
