@@ -6,7 +6,7 @@ Junior .NET Developer tests
 1.	What are your career goals (а) 3 years from now; (b) 10 years from now?
 2.	What is SCRUM?
 * [Link](https://www.visualstudio.com/learn/what-is-scrum/) - What is Scrum? 
-	Scrum is a framework used by teams to manage their work. Scrum implements the principles of * [Agile](https://www.visualstudio.com/learn/what-is-agile/) as a concrete set of practices and roles.
+	Scrum is a framework used by teams to manage their work. Scrum implements the principles of [Agile](https://www.visualstudio.com/learn/what-is-agile/) as a concrete set of practices and roles.
 
 3.	During development of a new functionality you have found a bug in existing code. What action do you take?
 4.	How do you maintain your code to prove that it is a good quality code?
@@ -81,7 +81,7 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 	Существует три типа связей между таблицами. Тип создаваемой связи зависит от того, как определены связанные столбцы. 
 	Связи «один ко многим» --- Связи «многие ко многим» --- Связи «один к одному»
 
-* [Habrahabr](https://habrahabr.ru/post/193380/) - Руководство по проектированию реляционных баз данных
+[Habrahabr](https://habrahabr.ru/post/193380/) - Руководство по проектированию реляционных баз данных
 
 12.	Что такое транзакция?
 13.	Что такое Триггер?
