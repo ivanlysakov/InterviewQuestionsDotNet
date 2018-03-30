@@ -32,12 +32,12 @@ having count (RequestID) > 1
 
 2.	What is the difference between UNIQUE constraint and PRIMARY KEY constraint?
 The UNIQUE constraint ensures that all values in a column are different. Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns. A PRIMARY KEY constraint automatically has a UNIQUE constraint. However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
-CREATE TABLE Persons (
-    ID int NOT NULL UNIQUE,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int
-);
+	CREATE TABLE Persons (
+  	  ID int NOT NULL UNIQUE,
+    	LastName varchar(255) NOT NULL,
+    	FirstName varchar(255),
+    	Age int
+	);
 To name a UNIQUE constraint, and to define a UNIQUE constraint on multiple columns, use the following SQL syntax: 
 CREATE TABLE Persons (
     ID int NOT NULL,
@@ -66,9 +66,10 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 10.	What is database replication? What are the different types of replication you can set up in SQL Server?
 
 11.	Типы связей БД
-Связь работает путем сопоставления данных в ключевых столбцах; обычно это столбцы с одним и тем же именем в обеих таблицах. В большинстве случаев связь сопоставляет первичный ключ одной таблицы, являющийся уникальным идентификатором каждой строки этой таблицы, с записями внешнего ключа другой таблицы. Например продажи книг можно связать с названиями проданных книг и создать связь между столбцом title_id таблицы titles (первичный ключ) и столбцом title_id таблицы sales (внешний ключ).
-Существует три типа связей между таблицами. Тип создаваемой связи зависит от того, как определены связанные столбцы. 
-Связи «один ко многим» --- Связи «многие ко многим» --- Связи «один к одному»
+
+		Связь работает путем сопоставления данных в ключевых столбцах; обычно это столбцы с одним и тем же именем в обеих таблицах. В большинстве случаев связь сопоставляет первичный ключ одной таблицы, являющийся уникальным идентификатором каждой строки этой таблицы, с записями внешнего ключа другой таблицы. Например продажи книг можно связать с названиями проданных книг и создать связь между столбцом title_id таблицы titles (первичный ключ) и столбцом title_id таблицы sales (внешний ключ).
+		Существует три типа связей между таблицами. Тип создаваемой связи зависит от того, как определены связанные столбцы. 
+		Связи «один ко многим» --- Связи «многие ко многим» --- Связи «один к одному»
 https://habrahabr.ru/post/193380/
 
 12.	Что такое транзакция?
