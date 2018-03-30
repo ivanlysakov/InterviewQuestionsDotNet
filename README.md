@@ -88,22 +88,22 @@ OOP
 6.	What is the difference between a Modal and a Modeless Dialog?
 7.	What extension method is? 
 Методы расширения (extension methods) позволяют добавлять новые методы в уже существующие типы без создания нового производного класса. Эта функциональность бывает особенно полезна, когда нам хочется добавить в некоторый тип новый метод, но сам тип (класс или структуру) мы изменить не можем.
-Например, нам надо добавить для типа string новый метод:
-class Program
-{
-    static void Main(string[] args)
-    {
-        string s = "Привет мир";
+Например, нам надо добавить для типа string новый метод
+	
+	class Program
+	{
+    	static void Main(string[] args)
+    	{	
+        	string s = "Привет мир";
         char c = 'и';
         int i = s.WordCount(c);
-        Console.WriteLine(i);
+   			Console.WriteLine(i);
  
         Console.ReadLine();
     }
-}
- 
-public static class StringExtension
-{
+	}
+	public static class StringExtension
+	{
     public static int WordCount(this string str, char c)
     {
         int counter = 0;
@@ -114,7 +114,7 @@ public static class StringExtension
         }
         return counter;
     }
-} 
+	} 
 
 Для того, чтобы создать метод расширения, вначале надо создать статический класс, который и будет содержать этот метод. В данном случае это класс StringExtension. Затем объявляем статический метод. Суть нашего метода расширения - подсчет количества определенных символов в строке.
 Собственно метод расширения - это обычный статический метод, который в качестве первого параметра всегда принимает такую конструкцию: this имя_типа название_параметра, то есть в нашем случае this string str. Так как наш метод будет относиться к типу string, то мы и используем данный тип.
