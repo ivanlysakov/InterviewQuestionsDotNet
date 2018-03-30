@@ -47,12 +47,13 @@ CREATE TABLE Persons (
     CONSTRAINT UC_Person UNIQUE (ID,LastName)
 );
 The PRIMARY KEY constraint uniquely identifies each record in a database table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only one primary key, which may consist of single or multiple fields.
-CREATE TABLE Persons (
+
+	CREATE TABLE Persons (
     ID int NOT NULL PRIMARY KEY,
     LastName varchar(255) NOT NULL,
     FirstName varchar(255),
     Age int
-);
+	);
 
 3.	You have discovered a bad performing query. Describe shortly what actions you can take to optimize it.
 4.	Describe the use of the HAVING clause
