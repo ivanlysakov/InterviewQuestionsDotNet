@@ -47,20 +47,20 @@ The UNIQUE constraint ensures that all values in a column are different. Both th
 To name a UNIQUE constraint, and to define a UNIQUE constraint on multiple columns, use the following SQL syntax: 
 ```
 	CREATE TABLE Persons (
-    ID int NOT NULL,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int,
-    CONSTRAINT UC_Person UNIQUE (ID,LastName)
+    	ID int NOT NULL,
+    	LastName varchar(255) NOT NULL,
+    	FirstName varchar(255),
+    	Age int,
+    	CONSTRAINT UC_Person UNIQUE (ID,LastName)
 	);
 ```
 The PRIMARY KEY constraint uniquely identifies each record in a database table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only one primary key, which may consist of single or multiple fields.
 ```	
 	CREATE TABLE Persons (
-    ID int NOT NULL PRIMARY KEY,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int
+    	ID int NOT NULL PRIMARY KEY,
+    	LastName varchar(255) NOT NULL,
+    	FirstName varchar(255),
+    	Age int
 	);
 ```
 3.	You have discovered a bad performing query. Describe shortly what actions you can take to optimize it.
