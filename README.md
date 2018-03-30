@@ -1,34 +1,42 @@
 # InterviewQuestionsDotNet
 Junior .NET Developer tests
-General
+
+##General
+
 1.	What are your career goals (а) 3 years from now; (b) 10 years from now?
 2.	What is SCRUM?
 
-https://www.visualstudio.com/learn/what-is-scrum/
-Scrum is a framework used by teams to manage their work. Scrum implements the principles of Agile as a concrete set of practices and roles.
+		https://www.visualstudio.com/learn/what-is-scrum/
+		Scrum is a framework used by teams to manage their work. Scrum implements the principles of Agile as a concrete set of 			practices and roles.
  
 
 3.	During development of a new functionality you have found a bug in existing code. What action do you take?
 4.	How do you maintain your code to prove that it is a good quality code?
 5.	Who/what is QA? Do we need them in the development process?
 6.	What version control systems are need for? What version control systems have you worked with?
-Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+		
+		Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
 
 7.	What is UAC?
 8.	A custumer reports slow perormance of your application that was not reproduced in development environment. What would you suggest to do to find and localize the reason?
-DB/SQL
+
+##DB/SQL
+
 1.	Write a query that shows all clients (FIRST NAME, LAST NAME) that occur more than once in the following client table. The query should also show how often the client occurs in the table.
 Table ClientRequests
 
-RequsetID   	INT(PK)
-FirstName	Varchar(255)		
-LastName 	Varchar(255)
+		RequsetID   	INT(PK)
+		FirstName	Varchar(255)		
+		LastName 	Varchar(255)
 
-SELECT count (RequestID) CNT, FirstName, LastName  
-FROM ClientsRequests 
-group by FirstName, LastName	  
-having count (RequestID) > 1
+		SELECT 	
+				count (RequestID) CNT, 
+				FirstName, 
+				LastName  
+		FROM ClientsRequests 
+				group by FirstName, LastName	  
+				having count (RequestID) > 1
 
 2.	What is the difference between UNIQUE constraint and PRIMARY KEY constraint?
 
@@ -52,7 +60,7 @@ CREATE TABLE Persons (
 );
 
 The PRIMARY KEY constraint uniquely identifies each record in a database table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only one primary key, which may consist of single or multiple fields.
-
+	
 	CREATE TABLE Persons (
     ID int NOT NULL PRIMARY KEY,
     LastName varchar(255) NOT NULL,
@@ -83,7 +91,8 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 13.	Что такое Триггер?
 14.	Что такое Функция и Хранимая процедура? Отличия
 
-OOP
+##OOP
+
 1.	What benefits of Classes?
 2.	What Incapsulation is? What benefits does it give?
 3.	What Polymorphism is?
@@ -92,8 +101,8 @@ OOP
 6.	What is the difference between a Modal and a Modeless Dialog?
 7.	What extension method is? 
 
-		Методы расширения (extension methods) позволяют добавлять новые методы в уже существующие типы без создания нового производного класса. Эта функциональность бывает особенно полезна, когда нам хочется добавить в некоторый тип новый метод, но сам тип (класс или структуру) мы изменить не можем.
-		Например, нам надо добавить для типа string новый метод
+Методы расширения (extension methods) позволяют добавлять новые методы в уже существующие типы без создания нового производного класса. Эта функциональность бывает особенно полезна, когда нам хочется добавить в некоторый тип новый метод, но сам тип (класс или структуру) мы изменить не можем.
+Например, нам надо добавить для типа string новый метод
 	
 			class Program
 		{
