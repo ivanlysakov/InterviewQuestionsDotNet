@@ -110,19 +110,16 @@ class Program {
 		Console.ReadLine();
 	}
 }
-			public static class StringExtension
-			{
-    	public static int WordCount(this string str, char c)
-    	{
-        int counter = 0;
-        for (int i = 0; i<str.Length; i++)
-        {
-            if (str[i] == c)
-                counter++;
-        }
-        return counter;
-    	}
-		} 
+public static class StringExtension{
+	public static int WordCount(this string str, char c){
+		int counter = 0;
+		for (int i = 0; i<str.Length; i++){
+			if (str[i] == c)
+			counter++;
+		}
+	return counter;
+	}
+} 
 ```
 
 Для того, чтобы создать метод расширения, вначале надо создать статический класс, который и будет содержать этот метод. В данном случае это класс StringExtension. Затем объявляем статический метод. Суть нашего метода расширения - подсчет количества определенных символов в строке.
