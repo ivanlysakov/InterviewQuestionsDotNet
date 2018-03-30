@@ -101,18 +101,15 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 Методы расширения (extension methods) позволяют добавлять новые методы в уже существующие типы без создания нового производного класса. Эта функциональность бывает особенно полезна, когда нам хочется добавить в некоторый тип новый метод, но сам тип (класс или структуру) мы изменить не можем.
 Например, нам надо добавить для типа string новый метод
 ```
-class Program
-		{
-    	static void Main(string[] args)
-    	{	
-        	string s = "Привет мир";
-        char c = 'и';
-        int i = s.WordCount(c);
-   			Console.WriteLine(i);
- 
-        Console.ReadLine();
-    	}
-		}
+class Program {
+	static void Main(string[] args){	
+		string s = "Привет мир";
+		char c = 'и';
+		int i = s.WordCount(c);
+		Console.WriteLine(i);
+		Console.ReadLine();
+	}
+}
 			public static class StringExtension
 			{
     	public static int WordCount(this string str, char c)
