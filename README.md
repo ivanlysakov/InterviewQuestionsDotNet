@@ -78,25 +78,39 @@ The PRIMARY KEY constraint uniquely identifies each record in a database table. 
     GROUP BY model
     HAVING AVG(price) < 800;
 
-5.	Describe the difference between UNION and UNION ALL. Describe the difference between INNER and OUTER JOINs, LEFT, RIGHT.
+5.	Describe the difference between UNION and UNION ALL. 
 
-	[UNION and UNION ALL](https://metanit.com/sql/sqlserver/7.5.php) 
-	Оператор UNION подобно inner join или outer join позволяет соединить две таблицы. Но в отличие от inner/outer join объединения соединяют не столбцы разных таблиц, а два однотипных набора в один.
+	[UNION and UNION ALL](https://www.w3schools.com/sql/sql_union.asp) 
+	The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+    * Each SELECT statement within UNION must have the same number of columns
+    * The columns must also have similar data types
+    * The columns in each SELECT statement must also be in the same order
 ```
-SELECT_выражение1
-UNION [ALL] SELECT_выражение2
-[UNION [ALL] SELECT_выражениеN]
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2; 
 ```
+The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL.
+#Note: The column names in the result-set are usually equal to the column names in the first SELECT statement in the UNION.
 
-Если оба объединяемых набора содержат в строках идентичные значения, то при объединении повторяющиеся строки удаляются. Например, в случае с таблицами Customers и Employees сотрудники банка могут быть одновременно его клиентами и содержаться в обеих таблицах. Если же необходимо при объединении сохранить все, в том числе повторяющиеся строки, то для этого необходимо добавить оператор ALL
+6.Describe the difference between INNER and OUTER JOINs, LEFT, RIGHT.
 
-6.	What is an ISOLATION LEVEL? Which of them do you know?
-7.	What is ON DELETE CASCADE? What object (constraint) does it belong to?
-8.	What do % and _ mean inside LIKE statement?
-9.	What is deadlock? How do you simulate a deadlock for testing purpose?
-10.	What is database replication? What are the different types of replication you can set up in SQL Server?
+[JOINS](https://www.w3schools.com/sql/sql_join.asp)
 
-11.	Типы связей БД
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
+
+
+7.	What is an ISOLATION LEVEL? Which of them do you know?
+8.	What is ON DELETE CASCADE? What object (constraint) does it belong to?
+9.	What do % and _ mean inside LIKE statement?
+10.	What is deadlock? How do you simulate a deadlock for testing purpose?
+11.	What is database replication? What are the different types of replication you can set up in SQL Server?
+
+12.	Типы связей БД
 
 	Связь работает путем сопоставления данных в ключевых столбцах; обычно это столбцы с одним и тем же именем в обеих таблицах. В большинстве случаев связь сопоставляет первичный ключ одной таблицы, являющийся уникальным идентификатором каждой строки этой таблицы, с записями внешнего ключа другой таблицы. Например продажи книг можно связать с названиями проданных книг и создать связь между столбцом title_id таблицы titles (первичный ключ) и столбцом title_id таблицы sales (внешний ключ).
 	Существует три типа связей между таблицами. Тип создаваемой связи зависит от того, как определены связанные столбцы. 
@@ -105,9 +119,9 @@ UNION [ALL] SELECT_выражение2
 
 [Habrahabr](https://habrahabr.ru/post/193380/) - Руководство по проектированию реляционных баз данных
 
-12.	Что такое транзакция?
-13.	Что такое Триггер?
-14.	Что такое Функция и Хранимая процедура? Отличия
+13.	Что такое транзакция?
+14.	Что такое Триггер?
+15.	Что такое Функция и Хранимая процедура? Отличия
 
 ## OOP
 
