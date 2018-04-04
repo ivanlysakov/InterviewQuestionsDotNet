@@ -66,9 +66,25 @@ The PRIMARY KEY constraint uniquely identifies each record in a database table. 
 3.	You have discovered a bad performing query. Describe shortly what actions you can take to optimize it.
 4.	Describe the use of the HAVING clause
 
-The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+[GROUP and HAVING](https://metanit.com/sql/sqlserver/5.2.php)
+	Оператор HAVING определяет, какие группы будут включены в выходной результат, то есть выполняет фильтрацию групп.
+Применение HAVING во многом аналогично применению WHERE. Только есть WHERE применяется к фильтрации строк, то HAVING используется для фильтрации групп.
+
+Пример: Получить количество ПК и среднюю цену для каждой модели, средняя цена которой менее $800
+
+    SELECT model, COUNT(model) AS Qty_model, 
+       AVG(price) AS Avg_price
+    FROM PC
+    GROUP BY model
+    HAVING AVG(price) < 800;
 
 5.	Describe the difference between UNION and UNION ALL. Describe the difference between INNER and OUTER JOINs, LEFT, RIGHT.
+	[UNION and UNION ALL](https://metanit.com/sql/sqlserver/7.5.php)
+	Оператор UNION подобно inner join или outer join позволяет соединить две таблицы. Но в отличие от inner/outer join объединения соединяют не столбцы разных таблиц, а два однотипных набора в один. Формальный синтаксис объединения:
+
+
+
+
 6.	What is an ISOLATION LEVEL? Which of them do you know?
 7.	What is ON DELETE CASCADE? What object (constraint) does it belong to?
 8.	What do % and _ mean inside LIKE statement?
