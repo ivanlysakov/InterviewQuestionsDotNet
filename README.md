@@ -79,11 +79,16 @@ The PRIMARY KEY constraint uniquely identifies each record in a database table. 
     HAVING AVG(price) < 800;
 
 5.	Describe the difference between UNION and UNION ALL. Describe the difference between INNER and OUTER JOINs, LEFT, RIGHT.
-	[UNION and UNION ALL](https://metanit.com/sql/sqlserver/7.5.php)
-	Оператор UNION подобно inner join или outer join позволяет соединить две таблицы. Но в отличие от inner/outer join объединения соединяют не столбцы разных таблиц, а два однотипных набора в один. Формальный синтаксис объединения:
 
+	[UNION and UNION ALL](https://metanit.com/sql/sqlserver/7.5.php) 
+	Оператор UNION подобно inner join или outer join позволяет соединить две таблицы. Но в отличие от inner/outer join объединения соединяют не столбцы разных таблиц, а два однотипных набора в один.
+```
+SELECT_выражение1
+UNION [ALL] SELECT_выражение2
+[UNION [ALL] SELECT_выражениеN]
+```
 
-
+Если оба объединяемых набора содержат в строках идентичные значения, то при объединении повторяющиеся строки удаляются. Например, в случае с таблицами Customers и Employees сотрудники банка могут быть одновременно его клиентами и содержаться в обеих таблицах. Если же необходимо при объединении сохранить все, в том числе повторяющиеся строки, то для этого необходимо добавить оператор ALL
 
 6.	What is an ISOLATION LEVEL? Which of them do you know?
 7.	What is ON DELETE CASCADE? What object (constraint) does it belong to?
