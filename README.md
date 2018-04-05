@@ -6,7 +6,7 @@ Junior .NET Developer tests
 1.	What are your career goals (а) 3 years from now; (b) 10 years from now?
 2.	What is SCRUM?
 
-	[Scrum](https://www.visualstudio.com/learn/what-is-scrum/) is a framework used by teams to manage their work. Scrum implements the principles of [Agile](https://www.visualstudio.com/learn/what-is-agile/) as a concrete set of practices and roles.
+	[Scrum](https://www.visualstudio.com/learn/what-is-scrum/) is a framework used by teams to manage their work. Scrum implements the principles of [Agile](https://www.visualstudio.com/learn/what-is-agile/) as a concrete set of practices and roles.[Video](https://www.youtube.com/watch?v=8fC6azg69n4)
 
 3.	During development of a new functionality you have found a bug in existing code. What action do you take?
 4.	How do you maintain your code to prove that it is a good quality code?
@@ -96,15 +96,18 @@ The UNION operator selects only distinct values by default. To allow duplicate v
 
 6.Describe the difference between INNER and OUTER JOINs, LEFT, RIGHT.
 
-[JOINS](https://www.w3schools.com/sql/sql_join.asp)
+[JOINS](https://www.w3schools.com/sql/sql_join.asp) A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
 
-(INNER) JOIN: Returns records that have matching values in both tables
-LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
-RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
-FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
+* (INNER) JOIN: Returns records that have matching values in both tables
+* LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+* RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
+* FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
 
 
 7.	What is an ISOLATION LEVEL? Which of them do you know?
+
+
+
 8.	What is ON DELETE CASCADE? What object (constraint) does it belong to?
 9.	What do % and _ mean inside LIKE statement?
 10.	What is deadlock? How do you simulate a deadlock for testing purpose?
