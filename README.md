@@ -6,14 +6,14 @@ Junior .NET Developer tests
 1.	What are your career goals (а) 3 years from now; (b) 10 years from now?
 2.	What is SCRUM?
 
-	[Scrum](https://www.visualstudio.com/learn/what-is-scrum/) is a framework used by teams to manage their work. Scrum implements the principles of [Agile](https://www.visualstudio.com/learn/what-is-agile/) as a concrete set of practices and roles.[Video](https://www.youtube.com/watch?v=8fC6azg69n4)
+	[Scrum](https://www.visualstudio.com/learn/what-is-scrum/) is a framework used by teams to manage their work. Scrum implements the principles of [Agile](https://www.visualstudio.com/learn/what-is-agile/) as a concrete set of practices and roles. [Video](https://www.youtube.com/watch?v=8fC6azg69n4)
 
 3.	During development of a new functionality you have found a bug in existing code. What action do you take?
 4.	How do you maintain your code to prove that it is a good quality code?
 5.	Who/what is QA? Do we need them in the development process?
 6.	What version control systems are need for? What version control systems have you worked with?
 
-	Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+	Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. [GIT](https://git-scm.com/book/en/v2)
 
 7.	What is UAC?
 8.	A custumer reports slow perormance of your application that was not reproduced in development environment. What would you suggest to do to find and localize the reason?
@@ -64,6 +64,7 @@ The PRIMARY KEY constraint uniquely identifies each record in a database table. 
 	);
 ```
 3.	You have discovered a bad performing query. Describe shortly what actions you can take to optimize it.
+
 4.	Describe the use of the HAVING clause
 
 [GROUP and HAVING](https://metanit.com/sql/sqlserver/5.2.php)
