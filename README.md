@@ -172,14 +172,13 @@ public static class StringExtension{
 Также следует учитывать, что методы расширения действуют на уровне пространства имен. То есть, если добавить в проект другое пространство имен, то метод не будет применяться к строкам, и в этом случае надо будет подключить пространство имен метода через директиву using.
 
 8.	What Interface is? 
-9.	What Abstrct Class is? And what is the difference between Abstarct Class and Interface?
-10.	What is the difference between Abstarct Class and Interface
+9.	What Abstract Class is? And what is the difference between Abstarct Class and Interface?
+10.	What is the difference between Abstract Class and Interface
 
 * Ссылочные типы и типы значений в C#
 * Приведение типов в C#
 * Boxing\Unboxing
 * Generics
-* Отличие интерфейса от абстрактного класса ☺
 * Чем List отличается от Array
 * Что такое сборка? Из каких частей она состоит?
 * Лямбда-выражения
