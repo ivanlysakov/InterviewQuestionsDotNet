@@ -175,6 +175,40 @@ public static class StringExtension{
 9.	What Abstrct Class is? And what is the difference between Abstarct Class and Interface?
 10.	What is the difference between Abstarct Class and Interface
 
+- Ссылочные типы и типы значений в C#
+— Приведение типов в C#
+— Boxing\Unboxing
+— Generics
+— Отличие интерфейса от абстрактного класса ☺
+— Чем List отличается от Array
+— Что такое сборка? Из каких частей она состоит?
+— Лямбда-выражения
+— Принципы работы Garbage collector
+
+ASP.NET MVC и паттерны:
+— Паттерны MVC
+— Паттерны Стратегия
+— Паттерны Наблюдатель
+— Паттерн Фабрика
+— Паттерны Repository и Unit of work
+
+SQL:
+— Выборка данных из одной таблицы по условию
+— Выборка из двух таблиц с джоином
+— Выборка с помощью GROUP BY
+— Нормальные формы
+
+Алгоритмические задачки:
+— Найти самый большой или маленький элемент массива
+— Любой алгоритм сортировки массива
+— Подсчет количества вхождения подстроки в тексте
+
+Разное:
+— HTTP протокол, отличия POST запроса от GET запроса
+— Что такое DOM-модель
+— Отличия JavaScript от C#
+— XML и JSON форматы
+
 
 
 
