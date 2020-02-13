@@ -1,4 +1,4 @@
-# InterviewQuestionsDotNet
+# Interview Questions DotNet
 Junior .NET Developer tests
 
 ## General
